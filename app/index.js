@@ -23,12 +23,12 @@ var MbpGenerator = yeoman.generators.Base.extend({
     console.log(this.yeoman);
 
     // replace it with a short and sweet description of your generator
-    console.log(chalk.magenta('You\'re using the fantastic Mbp generator.'));
+    console.log(chalk.magenta('You\'re using the Mobile Blueprints generator. Out of the box I include Zepto.js, iScroll, HammerJS and FastClick libraries for help to build your Mobile app.'));
 
     var prompts = [{
       type: 'confirm',
       name: 'someOption',
-      message: 'Would you like to enable this option?',
+      message: 'Would you like to create that scaffold now?',
       default: true
     }];
 
