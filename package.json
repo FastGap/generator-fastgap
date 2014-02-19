@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Scaffold out a mobile phonegap app",
   "license": "MIT",
+  "main": "app/index.js",
   "repository": "danielfeelfine/mobile-blueprints",
   "author": "Daniel Torres <daniel@updigital.me>",
   "engines": {
