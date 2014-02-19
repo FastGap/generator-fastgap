@@ -1,0 +1,31 @@
+{
+  "name": "generator-mbp",
+  "version": "0.0.1",
+  "description": "Scaffold out a mobile phonegap app",
+  "license": "MIT",
+  "repository": "danielfeelfine/mobile-blueprints",
+  "author": "Daniel Torres <daniel@updigital.me>",
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=1.2.10"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "mobile",
+    "phonegap"
+  ],
+  "dependencies": {
+    "yeoman-generator": "~0.16.0",
+    "chalk": "~0.4.0"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0",
+    "generator-mocha": ">=0.1.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
