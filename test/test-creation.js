@@ -33,6 +33,7 @@ describe('mbp generator', function () {
       'merges/.gitkeep',
 
       // expec~ project files.
+      'README.md',
       '.jshintrc',
       '.editorconfig',
 
