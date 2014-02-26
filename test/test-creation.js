@@ -29,6 +29,7 @@ describe('mbp generator', function () {
 
       // expec~ phonegap files.
       'platforms/.gitkeep',
+      'plugins/.gitkeep',
 
       // expec~ project files.
       '.jshintrc',
