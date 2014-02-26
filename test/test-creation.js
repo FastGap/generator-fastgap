@@ -32,6 +32,10 @@ describe('mbp generator', function () {
       'plugins/.gitkeep',
       'merges/.gitkeep',
 
+      // expec~ bower files.
+      '.bowerrc',
+      'bower.json',
+
       // expec~ project files.
       'README.md',
       '.jshintrc',
