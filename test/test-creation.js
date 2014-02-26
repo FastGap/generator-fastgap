@@ -27,6 +27,9 @@ describe('mbp generator', function () {
       // expec~ javascripts files.
       'www/javascripts/js/index.js',
 
+      // expec~ phonegap files.
+      'platforms/.gitkeep',
+
       // expec~ project files.
       '.jshintrc',
       '.editorconfig'
