@@ -46,6 +46,15 @@ var MbpGenerator = yeoman.generators.Base.extend({
     this.copy('_bower.json', 'bower.json');
   },
 
+  stylesheets: function () {
+    this.mkdir('www/stylesheets');
+    this.mkdir('www/stylesheets/css');
+
+    this.copy('stylesheets/css/base.css', 'www/stylesheets/css/base.css');
+    this.copy('stylesheets/css/reset.css', 'www/stylesheets/css/reset.css');
+    this.copy('stylesheets/css/transitions.css', 'www/stylesheets/css/transitions.css');
+  },
+
   projectfiles: function () {
     this.copy('editorconfig', '.editorconfig');
     this.copy('jshintrc', '.jshintrc');
