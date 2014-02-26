@@ -74,6 +74,11 @@ var MbpGenerator = yeoman.generators.Base.extend({
   projectfiles: function () {
     this.copy('editorconfig', '.editorconfig');
     this.copy('jshintrc', '.jshintrc');
+  },
+
+  git: function () {
+    this.copy('gitignore', '.gitignore');
+    this.copy('gitattributes', '.gitattributes');
   }
 });
 
