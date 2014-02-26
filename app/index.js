@@ -41,6 +41,7 @@ var MbpGenerator = yeoman.generators.Base.extend({
 
   app: function () {
     this.mkdir('www');
+    this.mkdir('platfoms');
 
     this.copy('_package.json', 'package.json');
     this.copy('_bower.json', 'bower.json');
@@ -60,6 +61,10 @@ var MbpGenerator = yeoman.generators.Base.extend({
     this.copy('stylesheets/css/base.css', 'www/stylesheets/css/base.css');
     this.copy('stylesheets/css/reset.css', 'www/stylesheets/css/reset.css');
     this.copy('stylesheets/css/transitions.css', 'www/stylesheets/css/transitions.css');
+  },
+
+  phonegap: function () {
+    this.copy('gitkeep', 'platforms/.gitkeep');
   },
 
   projectfiles: function () {
