@@ -43,6 +43,7 @@ var MbpGenerator = yeoman.generators.Base.extend({
     this.mkdir('www');
     this.mkdir('platfoms');
     this.mkdir('plugins');
+    this.mkdir('merges');
 
     this.copy('_package.json', 'package.json');
     this.copy('_bower.json', 'bower.json');
@@ -67,6 +68,7 @@ var MbpGenerator = yeoman.generators.Base.extend({
   phonegap: function () {
     this.copy('gitkeep', 'platforms/.gitkeep');
     this.copy('gitkeep', 'plugins/.gitkeep');
+    this.copy('gitkeep', 'merges/.gitkeep');
   },
 
   projectfiles: function () {
