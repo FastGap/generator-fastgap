@@ -24,6 +24,9 @@ describe('mbp generator', function () {
       'www/stylesheets/css/base.css',
       'www/stylesheets/css/transitions.css',
 
+      // expec~ javascripts files.
+      'www/javascripts/js/index.js',
+
       // expec~ project files.
       '.jshintrc',
       '.editorconfig'
