@@ -19,11 +19,12 @@ describe('mbp generator', function () {
 
   it('creates expected files', function (done) {
     var expected = [
-      // add stylesheets files.
+      // expec~ stylesheets files.
       'www/stylesheets/css/reset.css',
       'www/stylesheets/css/base.css',
       'www/stylesheets/css/transitions.css',
 
+      // expec~ project files.
       '.jshintrc',
       '.editorconfig'
     ];
