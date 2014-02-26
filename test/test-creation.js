@@ -34,7 +34,11 @@ describe('mbp generator', function () {
 
       // expec~ project files.
       '.jshintrc',
-      '.editorconfig'
+      '.editorconfig',
+
+      // expec~ project files.
+      '.gitignore',
+      '.gitattributes'
     ];
 
     helpers.mockPrompt(this.app, {
