@@ -43,7 +43,10 @@ describe('mbp generator', function () {
 
       // expec~ git files.
       '.gitignore',
-      '.gitattributes'
+      '.gitattributes',
+
+      // expec~ iOS files.
+      'www/stylesheets/css/media/ios/iphone-5.css'
     ];
 
     helpers.mockPrompt(this.app, {
