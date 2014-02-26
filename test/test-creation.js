@@ -37,7 +37,7 @@ describe('mbp generator', function () {
       '.jshintrc',
       '.editorconfig',
 
-      // expec~ project files.
+      // expec~ git files.
       '.gitignore',
       '.gitattributes'
     ];
