@@ -46,7 +46,10 @@ describe('mbp generator', function () {
       '.gitattributes',
 
       // expec~ iOS files.
-      'www/stylesheets/css/media/ios/iphone-5.css'
+      'www/stylesheets/css/media/ios/iphone-5.css',
+
+      // expec~ Android files.
+      'www/stylesheets/css/media/android/galaxy-s3.css'
     ];
 
     helpers.mockPrompt(this.app, {
