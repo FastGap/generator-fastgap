@@ -46,6 +46,10 @@ var MbpGenerator = yeoman.generators.Base.extend({
     this.mkdir('merges');
 
     this.copy('_package.json', 'package.json');
+  },
+
+  bower: function () {
+    this.copy('bowerrc', '.bowerrc');
     this.copy('_bower.json', 'bower.json');
   },
 
