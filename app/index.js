@@ -5,7 +5,7 @@ var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 
 
-var MbpGenerator = yeoman.generators.Base.extend({
+var FastgapGenerator = yeoman.generators.Base.extend({
   init: function () {
     this.pkg = yeoman.file.readJSON(path.join(__dirname, '../package.json'));
 
@@ -22,7 +22,7 @@ var MbpGenerator = yeoman.generators.Base.extend({
     // welcome message
     if (!this.options['skip-welcome-message']) {
       console.log(this.yeoman);
-      console.log(chalk.magenta('You\'re using the Mobile Blueprints generator. Out of the box I include Zepto.js, iScroll, HammerJS and FastClick libraries for help to build your Mobile app.'));
+      console.log(chalk.magenta('You\'re using the FastGap generator. Out of the box I include Zepto.js, iScroll, HammerJS and FastClick libraries for help to build your Phonegap app.'));
     }
 
     var prompts = [{
@@ -116,4 +116,4 @@ var MbpGenerator = yeoman.generators.Base.extend({
   }
 });
 
-module.exports = MbpGenerator;
+module.exports = FastgapGenerator;
