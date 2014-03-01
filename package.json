@@ -1,10 +1,10 @@
 {
-  "name": "generator-mbp",
+  "name": "generator-fastgap",
   "version": "0.0.3",
   "description": "Scaffold out a mobile phonegap app",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "danielfeelfine/generator-mbp",
+  "repository": "danielfeelfine/generator-fastgap",
   "author": "Daniel Torres <daniel@updigital.me>",
   "engines": {
     "node": ">=0.10.0",
