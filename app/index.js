@@ -77,6 +77,10 @@ var FastgapGenerator = yeoman.generators.Base.extend({
     }
   },
 
+  appfiles: function () {
+    this.copy('www/index.html', 'www/index.html');
+  },
+
   bower: function () {
     this.copy('bowerrc', '.bowerrc');
     this.copy('_bower.json', 'bower.json');
