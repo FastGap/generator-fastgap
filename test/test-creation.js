@@ -42,6 +42,16 @@ describe('Fastgap generator', function () {
       '.jshintrc',
       '.editorconfig',
 
+      // expec~ test files.
+      'www/spec.html',
+      'www/spec/index.js',
+      'www/spec/helper.js',
+        // jasmine lib
+        'www/spec/lib/jasmine-1.2.0/jasmine-html.js',
+        'www/spec/lib/jasmine-1.2.0/jasmine.css',
+        'www/spec/lib/jasmine-1.2.0/jasmine.js',
+        'www/spec/lib/jasmine-1.2.0/MIT.LICENSE',
+
       // expec~ git files.
       '.gitignore',
       '.gitattributes'
