@@ -31,6 +31,7 @@ describe('Fastgap generator', function () {
       'platforms/.gitkeep',
       'plugins/.gitkeep',
       'merges/.gitkeep',
+      'hooks/.gitkeep',
 
       // expec~ bower files.
       '.bowerrc',
