@@ -106,6 +106,7 @@ var FastgapGenerator = yeoman.generators.Base.extend({
     this.copy('gitkeep', 'platforms/.gitkeep');
     this.copy('gitkeep', 'plugins/.gitkeep');
     this.copy('gitkeep', 'merges/.gitkeep');
+    this.copy('gitkeep', 'hooks/.gitkeep');
   },
 
   projectfiles: function () {
