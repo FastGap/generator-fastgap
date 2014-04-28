@@ -115,6 +115,17 @@ var FastgapGenerator = yeoman.generators.Base.extend({
     this.copy('jshintrc', '.jshintrc');
   },
 
+  testfiles: function () {
+    this.copy('www/spec.html', 'www/spec.html');
+    this.copy('www/spec/index.js', 'www/spec/index.js');
+    this.copy('www/spec/helper.js', 'www/spec/helper.js');
+      // lib: jasmine-1.2.0
+      this.copy('www/spec/lib/jasmine-1.2.0/jasmine-html.js', 'www/spec/lib/jasmine-1.2.0/jasmine-html.js');
+      this.copy('www/spec/lib/jasmine-1.2.0/jasmine.css', 'www/spec/lib/jasmine-1.2.0/jasmine.css');
+      this.copy('www/spec/lib/jasmine-1.2.0/jasmine.js', 'www/spec/lib/jasmine-1.2.0/jasmine.js');
+      this.copy('www/spec/lib/jasmine-1.2.0/MIT.LICENSE', 'www/spec/lib/jasmine-1.2.0/MIT.LICENSE');
+  },
+
   git: function () {
     this.copy('gitignore', '.gitignore');
     this.copy('gitattributes', '.gitattributes');
