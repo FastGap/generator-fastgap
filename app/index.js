@@ -56,7 +56,6 @@ var FastgapGenerator = yeoman.generators.Base.extend({
 
   app: function () {
     this.mkdir('www');
-    this.mkdir('platfoms');
     this.mkdir('plugins');
     this.mkdir('merges');
 
