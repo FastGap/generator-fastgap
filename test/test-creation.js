@@ -19,13 +19,9 @@ describe('Fastgap generator', function () {
 
   it('creates expected files', function (done) {
     var expected = [
-      // expec~ stylesheets files.
-      'www/stylesheets/css/reset.css',
-      'www/stylesheets/css/base.css',
-      'www/stylesheets/css/transitions.css',
-
-      // expec~ javascripts files.
-      'www/javascripts/js/index.js',
+      // expec~ assets
+      'www/assets/js/main.js',
+      'www/assets/css/main.css',
 
       // expec~ phonegap files.
       'platforms/.gitkeep',
