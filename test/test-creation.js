@@ -24,6 +24,7 @@ describe('Fastgap generator', function () {
       'www/assets/css/main.css',
 
       // expec~ phonegap files.
+      'www/config.xml',
       'platforms/.gitkeep',
       'plugins/.gitkeep',
       'merges/.gitkeep',
