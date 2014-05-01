@@ -85,20 +85,12 @@ var FastgapGenerator = yeoman.generators.Base.extend({
     this.copy('_bower.json', 'bower.json');
   },
 
-  javascripts: function () {
-    this.mkdir('www/javascripts');
-    this.mkdir('www/javascripts/js');
-
-    this.copy('javascripts/js/index.js', 'www/javascripts/js/index.js');
-  },
-
-  stylesheets: function () {
-    this.mkdir('www/stylesheets');
-    this.mkdir('www/stylesheets/css');
-
-    this.copy('stylesheets/css/base.css', 'www/stylesheets/css/base.css');
-    this.copy('stylesheets/css/reset.css', 'www/stylesheets/css/reset.css');
-    this.copy('stylesheets/css/transitions.css', 'www/stylesheets/css/transitions.css');
+  assets: function () {
+    this.mkdir('www/assets');
+    this.mkdir('www/assets/js');
+    this.mkdir('www/assets/js/main.js');
+    this.mkdir('www/assets/css');
+    this.mkdir('www/assets/css/main.css');
   },
 
   phonegap: function () {
