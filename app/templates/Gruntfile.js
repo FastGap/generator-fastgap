@@ -191,4 +191,7 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-js', ['concat', 'uglify', 'copy']);
   grunt.registerTask('dist', ['clean', 'dist-css', 'dist-js', 'usebanner']);
 
+  // Test task
+  grunt.registerTask('test', ['jshint']);
+
 };
