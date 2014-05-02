@@ -47,6 +47,19 @@ module.exports = function (grunt) {
           '<%= path.assets %>/css/main.css': '<%= path.styles/build.scss'
         }
       }
+    },
+
+    /************************************
+     * grunt-contrib-concat
+     * Concatenate files
+     ************************************/
+    concat: {
+      prod: {
+        src: [
+          '<%= path.controllers %>/*.js'
+        ],
+        dest: '<%= path.assets %>/js/main.js'
+      }
     }
 
   };
