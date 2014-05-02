@@ -15,6 +15,7 @@
     "grunt-shell": "~0.7.0",
     "grunt-contrib-connect": "~0.7.1",
     "grunt-contrib-watch": "~0.6.1",
-    "grunt-banner": "~0.2.2"
+    "grunt-banner": "~0.2.2",
+    "grunt-bump": "~0.0.13"
   }
 }
