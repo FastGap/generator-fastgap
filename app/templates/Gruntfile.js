@@ -158,6 +158,21 @@ module.exports = function (grunt) {
           livereload: true
         }
       }
+    },
+
+    /************************************
+     * grunt-banner
+     * Adds a simple banner to files
+     ************************************/
+    usebanner: {
+      options: {
+        position: 'top',
+        banner: '<%= banner %>'
+      },
+      files: {
+        src: ['<%= path.assets %>/css/**/*.css',
+              '<%= path.js %>/js/**/*.js']
+      }
     }
 
   };
