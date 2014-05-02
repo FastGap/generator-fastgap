@@ -93,6 +93,18 @@ module.exports = function (grunt) {
         src: ['*.eot', '*.svg', '*.ttf', '*.woff'],
         dest: '<%= path.assets %>/fonts'
       }
+    },
+
+    /************************************
+     * grunt-contrib-jshint
+     * Validate files with JSHint
+     ************************************/
+    jshint: {
+      options: {
+        jshintrc: '.jshintrc'
+      },
+      all: ['Gruntfile.js',
+            '<%= path.src %>/**/*.js']
     }
 
   };
