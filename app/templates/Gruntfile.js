@@ -60,6 +60,20 @@ module.exports = function (grunt) {
         ],
         dest: '<%= path.assets %>/js/main.js'
       }
+    },
+
+    /************************************
+     * grunt-contrib-uglify
+     * Minify files
+     ************************************/
+    uglify: {
+      options: {
+        report: 'min'
+      },
+      prod: {
+        src: '<%= path.src %>/main.js',
+        dest: '<%= path.src %>/main.min.js'
+      }
     }
 
   };
