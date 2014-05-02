@@ -36,6 +36,7 @@ describe('Fastgap generator', function () {
 
       // expec~ project files.
       'README.md',
+      'Gruntfile.js',
       '.jshintrc',
       '.editorconfig',
 
