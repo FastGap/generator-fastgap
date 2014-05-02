@@ -194,4 +194,7 @@ module.exports = function (grunt) {
   // Test task
   grunt.registerTask('test', ['jshint']);
 
+  // Default task
+  grunt.registerTask('default', ['watch']);
+
 };
