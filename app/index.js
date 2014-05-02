@@ -122,6 +122,19 @@ var FastgapGenerator = yeoman.generators.Base.extend({
   git: function () {
     this.copy('gitignore', '.gitignore');
     this.copy('gitattributes', '.gitattributes');
+  },
+
+  install: function () {
+    if (this.options['skip-install']) {
+      return;
+    }
+
+    var done = this.async();
+    this.installDependencies({
+      skipMessage: this.options['skip-install-message'],
+      skipInstall: this.options['skip-install'],
+      callback: done
+    });
   }
 });
 
