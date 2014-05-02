@@ -60,4 +60,7 @@ module.exports = function (grunt) {
   // Displays the execution time of grunt tasks
   require('time-grunt')(grunt);
 
+  // CSS dist task
+  grunt.registerTask('dist-css', ['sass']);
+
 };
