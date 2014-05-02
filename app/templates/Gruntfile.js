@@ -74,6 +74,25 @@ module.exports = function (grunt) {
         src: '<%= path.src %>/main.js',
         dest: '<%= path.src %>/main.min.js'
       }
+    },
+
+    /************************************
+     * grunt-contrib-copy
+     * Copy files and folders to a destination path
+     ************************************/
+    copy: {
+      views: {
+        expand: true,
+        cwd: '<%= path.views %>',
+        src: '*.html',
+        dest: '<%= path.www %>/pages'
+      },
+      fonts: {
+        expand: true,
+        cwd: '<%= path.src %>/fonts',
+        src: ['*.eot', '*.svg', '*.ttf', '*.woff'],
+        dest: '<%= path.assets %>/fonts'
+      }
     }
 
   };
