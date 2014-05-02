@@ -39,4 +39,10 @@ module.exports = function (grunt) {
   // Init grunt configurations
   grunt.initConfig(appConfig);
 
+  // Load all grunt tasks matching the `grunt-*` pattern
+  require('load-grunt-tasks')(grunt);
+
+  // Displays the execution time of grunt tasks
+  require('time-grunt')(grunt);
+
 };
