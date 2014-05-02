@@ -24,6 +24,16 @@ module.exports = function (grunt) {
             ' */\n',
 
 
+    /************************************
+     * grunt-contrib-clean
+     * Clean files and folders
+     ************************************/
+    clean: {
+      dist: ['<%= path.assets %>/css',
+            '<%= path.assets %>/js',
+            '<%= path.assets %>/fonts']
+    }
+    
   };
 
   // Init grunt configurations
