@@ -32,8 +32,23 @@ module.exports = function (grunt) {
       dist: ['<%= path.assets %>/css',
             '<%= path.assets %>/js',
             '<%= path.assets %>/fonts']
+    },
+
+    /************************************
+     * grunt-sass
+     * Compile SCSS to CSS using node-sass
+     ************************************/
+    sass: {
+      prod: {
+        options: {
+          outputStyle: 'nested'
+        },
+        files: {
+          '<%= path.assets %>/css/main.css': '<%= path.styles/build.scss'
+        }
+      }
     }
-    
+
   };
 
   // Init grunt configurations
