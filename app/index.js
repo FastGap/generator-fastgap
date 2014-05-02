@@ -103,6 +103,7 @@ var FastgapGenerator = yeoman.generators.Base.extend({
 
   projectfiles: function () {
     this.copy('README.md', 'README.md');
+    this.copy('Gruntfile.js', 'Gruntfile.js');
     this.copy('editorconfig', '.editorconfig');
     this.copy('jshintrc', '.jshintrc');
   },
