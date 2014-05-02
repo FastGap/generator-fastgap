@@ -105,6 +105,19 @@ module.exports = function (grunt) {
       },
       all: ['Gruntfile.js',
             '<%= path.src %>/**/*.js']
+    },
+
+    /************************************
+     * grunt-shell
+     * Run shell commands
+     ************************************/
+    shell : {
+      build : {
+        options: {
+          stdout: true
+        },
+        command : 'phonegap build'
+      }
     }
 
   };
