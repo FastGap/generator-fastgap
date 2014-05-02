@@ -131,6 +131,33 @@ module.exports = function (grunt) {
           base: '<%= path.www %>'
         }
       }
+    },
+
+    /************************************
+     * grunt-contrib-watch
+     * Watch some files and tasks
+     ************************************/
+    watch: {
+      html: {
+        files: '<%= path.views %>/**/*.html',
+        options: {
+          livereload: true
+        }
+      },
+      styles: {
+        files: '<%= path.styles %>/**/*.scss',
+        tasks: ['sass'],
+        options: {
+          livereload: true
+        }
+      },
+      javascripts: {
+        files: '<%= path.src %>/js/**/*.js',
+        tasks: ['dist-js'],
+        options: {
+          livereload: true
+        }
+      }
     }
 
   };
