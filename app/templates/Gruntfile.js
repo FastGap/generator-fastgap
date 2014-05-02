@@ -189,5 +189,6 @@ module.exports = function (grunt) {
   // JS and CSS dist task
   grunt.registerTask('dist-css', ['sass']);
   grunt.registerTask('dist-js', ['concat', 'uglify', 'copy']);
+  grunt.registerTask('dist', ['clean', 'dist-css', 'dist-js', 'usebanner']);
 
 };
