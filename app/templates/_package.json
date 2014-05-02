@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "dependencies": {},
   "devDependencies": {
-    "grunt": "~0.4.4"
+    "grunt": "~0.4.4",
+    "time-grunt": "^0.3.1"
   }
 }
