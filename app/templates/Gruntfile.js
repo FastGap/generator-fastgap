@@ -173,6 +173,26 @@ module.exports = function (grunt) {
         src: ['<%= path.assets %>/css/**/*.css',
               '<%= path.js %>/js/**/*.js']
       }
+    },
+
+    /************************************
+     * grunt-bump
+     * Bump package version, create tag, commit, push...
+     ************************************/
+    bump: {
+      options: {
+        files: ['package.json', 'bower.json'],
+        updateConfigs: [],
+        commit: true,
+        commitMessage: '%VERSION%',
+        commitFiles: ['package.json', 'bower.json', '<%= path.www %>'], // '-a' for all files
+        createTag: true,
+        tagName: '%VERSION%',
+        tagMessage: '%VERSION%',
+        push: true,
+        pushTo: 'master',
+        gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d' // options to use with '$ git describe'
+      }
     }
 
   };
