@@ -118,6 +118,19 @@ module.exports = function (grunt) {
         },
         command : 'phonegap build'
       }
+    },
+
+    /************************************
+     * grunt-contrib-connect
+     * Start a connect web server
+     ************************************/
+    connect: {
+      server: {
+        options: {
+          port: 9001,
+          base: '<%= path.www %>'
+        }
+      }
     }
 
   };
