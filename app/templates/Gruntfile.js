@@ -117,6 +117,12 @@ module.exports = function (grunt) {
           stdout: true
         },
         command : 'phonegap build'
+      },
+      add-ios : {
+        options: {
+          stdout: true
+        },
+        command : 'cordova platform add ios'
       }
     },
 
@@ -212,6 +218,9 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-css', ['sass']);
   grunt.registerTask('dist-js', ['concat', 'uglify', 'copy']);
   grunt.registerTask('dist', ['clean', 'dist-css', 'dist-js', 'usebanner']);
+
+  // Add iOS Platform task
+  grunt.registerTask('add-ios', ['shell:add-ios']);
 
   // Test task
   grunt.registerTask('test', ['jshint']);
