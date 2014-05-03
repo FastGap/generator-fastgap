@@ -28,6 +28,7 @@ describe('Fastgap generator', function () {
 
       // expec~ src/styles
       'src/styles/build.scss',
+      'src/styles/custom/_style.scss',
 
       // expec~ page files.
       'www/pages/home.html',
