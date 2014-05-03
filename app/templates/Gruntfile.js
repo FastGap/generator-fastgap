@@ -223,7 +223,7 @@ module.exports = function (grunt) {
 
   // JS and CSS dist task
   grunt.registerTask('dist-css', ['sass', 'concat:bowerStyles']);
-  grunt.registerTask('dist-js', ['concat', 'uglify', 'copy']);
+  grunt.registerTask('dist-js', ['concat:controllers', 'uglify', 'copy']);
   grunt.registerTask('dist', ['clean', 'dist-css', 'dist-js', 'usebanner']);
 
   // Add iOS Platform task
