@@ -58,7 +58,7 @@ module.exports = function (grunt) {
         src: [
           '<%= path.controllers %>/*.js'
         ],
-        dest: '<%= path.assets %>/js/<%= _.slugify(appname) %>.controllers.js'
+        dest: '<%= path.assets %>/js/controllers.js'
       }
     },
 
