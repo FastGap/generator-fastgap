@@ -108,6 +108,10 @@ var FastgapGenerator = yeoman.generators.Base.extend({
     this.copy('jshintrc', '.jshintrc');
   },
 
+  controllers: function () {
+    this.copy('src/controllers/HomeController.js', 'src/controllers/HomeController.js');
+  },
+
   testfiles: function () {
     this.copy('www/spec.html', 'www/spec.html');
     this.copy('www/spec/index.js', 'www/spec/index.js');
