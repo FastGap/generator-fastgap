@@ -24,6 +24,7 @@ describe('Fastgap generator', function () {
 
       // expec~ src/controllers
       'src/controllers/HomeController.js',
+      'src/controllers/AppController.js',
 
       // expec~ src/styles
       'src/styles/build.scss',
