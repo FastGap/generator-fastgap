@@ -62,10 +62,10 @@ module.exports = function (grunt) {
         dest: '<%= path.assets %>/js/controllers.js'
       },
       bowerStyles: {
-        src: ['<%= path.bower %>/topcoat/css/topcoat-mobile-light.min.css',
+        src: ['<%= path.bower %>/topcoat/css/topcoat-mobile-light.css',
               '<%= path.bower %>/snapjs/snap.css',
-              '<%= path.bower %>/fastgap/dist/css/fastgap.min.css'],
-        dest: '<%= path.styles %>/bower_components.css'
+              '<%= path.bower %>/fastgap/dist/css/fastgap.css'],
+        dest: '<%= path.assets %>/css/bower_components.css'
       }
     },
 
@@ -80,10 +80,6 @@ module.exports = function (grunt) {
       prod: {
         src: '<%= path.src %>/main.js',
         dest: '<%= path.src %>/main.min.js'
-      },
-      bowerStyles: {
-        src: '<%= path.styles %>/bower_components.css',
-        dest: '<%= path.assets %>/css/bower_components.min.css'
       }
     },
 
