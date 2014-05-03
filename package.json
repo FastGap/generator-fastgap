@@ -1,6 +1,6 @@
 {
   "name": "generator-fastgap",
-  "version": "0.0.3",
+  "version": "0.0.55",
   "description": "Scaffold out a mobile phonegap app",
   "license": "MIT",
   "main": "app/index.js",
