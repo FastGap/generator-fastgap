@@ -62,10 +62,10 @@ module.exports = function (grunt) {
         dest: '<%= path.assets %>/js/controllers.js'
       },
       bowerScripts: {
-        src: ['<%= path.bower %>/fastgap/dist/js/fastgap.libs.js'
+        src: ['<%= path.bower %>/fastgap/dist/js/fastgap.libs.js',
               '<%= path.bower %>/fastgap/dist/js/fastgap.core.js'],
         dest: '<%= path.assets %>/js/bower_components.js'
-      }
+      },
       bowerStyles: {
         src: ['<%= path.bower %>/topcoat/css/topcoat-mobile-light.css',
               '<%= path.bower %>/snapjs/snap.css',
@@ -228,7 +228,7 @@ module.exports = function (grunt) {
 
   // JS and CSS dist task
   grunt.registerTask('dist-css', ['sass', 'concat:bowerStyles']);
-  grunt.registerTask('dist-js', ['concat:controllers', 'concat:bowerScripts' 'uglify', 'copy']);
+  grunt.registerTask('dist-js', ['concat:controllers', 'concat:bowerScripts', 'uglify', 'copy']);
   grunt.registerTask('dist', ['clean', 'dist-css', 'dist-js', 'usebanner']);
 
   // Add iOS Platform task
