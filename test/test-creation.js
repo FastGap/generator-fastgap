@@ -28,6 +28,9 @@ describe('Fastgap generator', function () {
       // expec~ src/styles
       'src/styles/build.scss',
 
+      // expec~ page files.
+      'www/pages/home.html',
+
       // expec~ phonegap files.
       'www/config.xml',
       'platforms/.gitkeep',
