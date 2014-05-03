@@ -128,7 +128,9 @@ module.exports = function (grunt) {
       server: {
         options: {
           port: 9001,
-          base: '<%= path.www %>'
+          base: '<%= path.www %>',
+          open: true,
+          livereload: true
         }
       }
     },
