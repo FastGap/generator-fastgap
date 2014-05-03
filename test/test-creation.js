@@ -19,9 +19,8 @@ describe('Fastgap generator', function () {
 
   it('creates expected files', function (done) {
     var expected = [
-      // expec~ assets
-      'www/assets/js/main.js',
-      'www/assets/css/main.css',
+      // expec~ src/controllers
+      'src/controllers/HomeController.js',
 
       // expec~ phonegap files.
       'www/config.xml',
