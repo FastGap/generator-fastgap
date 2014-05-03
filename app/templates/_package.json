@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "dependencies": {},
   "devDependencies": {
+    "cordova": "^3.4.1-0.1.0",
     "grunt": "~0.4.4",
     "time-grunt": "^0.3.1",
     "load-grunt-tasks": "~0.4.0",
