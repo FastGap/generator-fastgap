@@ -222,7 +222,7 @@ module.exports = function (grunt) {
   require('time-grunt')(grunt);
 
   // JS and CSS dist task
-  grunt.registerTask('dist-css', ['sass']);
+  grunt.registerTask('dist-css', ['sass', 'concat:bowerStyles']);
   grunt.registerTask('dist-js', ['concat', 'uglify', 'copy']);
   grunt.registerTask('dist', ['clean', 'dist-css', 'dist-js', 'usebanner']);
 
