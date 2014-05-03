@@ -19,6 +19,9 @@ describe('Fastgap generator', function () {
 
   it('creates expected files', function (done) {
     var expected = [
+      // expec~ app files.
+      'www/index.html',
+
       // expec~ src/controllers
       'src/controllers/HomeController.js',
 
