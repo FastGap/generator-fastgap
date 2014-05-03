@@ -45,7 +45,7 @@ module.exports = function (grunt) {
           outputStyle: 'nested'
         },
         files: {
-          '<%= path.assets %>/css/main.css': '<%= path.styles/build.scss'
+          '<%= path.assets %>/css/main.css': '<%= path.styles %>/build.scss'
         }
       }
     },
