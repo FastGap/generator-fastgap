@@ -78,7 +78,6 @@ var FastgapGenerator = yeoman.generators.Base.extend({
 
   appfiles: function () {
     this.copy('www/config.xml', 'www/config.xml');
-    this.copy('www/index.html', 'www/index.html');
   },
 
   bower: function () {
