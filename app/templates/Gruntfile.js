@@ -54,11 +54,11 @@ module.exports = function (grunt) {
      * Concatenate files
      ************************************/
     concat: {
-      prod: {
+      controllers: {
         src: [
           '<%= path.controllers %>/*.js'
         ],
-        dest: '<%= path.assets %>/js/main.js'
+        dest: '<%= path.assets %>/js/<%= _.slugify(appname) %>.controllers.js'
       }
     },
 
@@ -227,7 +227,7 @@ module.exports = function (grunt) {
 
   // Server task
   grunt.registerTask("serve", ["connect", "watch"]);
-  
+
   // Default task
   grunt.registerTask('default', ['watch']);
 
