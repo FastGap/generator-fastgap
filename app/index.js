@@ -115,6 +115,7 @@ var FastgapGenerator = yeoman.generators.Base.extend({
 
   styles: function () {
     this.copy('src/styles/build.scss', 'src/styles/build.scss');
+    this.copy('src/styles/custom/_style.scss', 'src/styles/custom/_style.scss');
   },
 
   pages: function () {
