@@ -83,9 +83,9 @@ module.exports = function (grunt) {
     copy: {
       views: {
         expand: true,
-        cwd: '<%= path.views %>',
-        src: '*.html',
-        dest: '<%= path.www %>/pages'
+        cwd: '<%= path.views %>/**/',
+        src: '**/*.html',
+        dest: '<%= path.www %>/**'
       },
       fonts: {
         expand: true,
