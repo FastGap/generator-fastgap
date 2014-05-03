@@ -42,6 +42,7 @@ module.exports = function (grunt) {
     sass: {
       prod: {
         options: {
+          includePaths: ['<%= path.styles %>/custom'],
           outputStyle: 'nested'
         },
         files: {
