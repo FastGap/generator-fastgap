@@ -89,9 +89,7 @@ var FastgapGenerator = yeoman.generators.Base.extend({
   assets: function () {
     this.mkdir('www/assets');
     this.mkdir('www/assets/js');
-    this.mkdir('www/assets/js/main.js');
     this.mkdir('www/assets/css');
-    this.mkdir('www/assets/css/main.css');
   },
 
   phonegap: function () {
